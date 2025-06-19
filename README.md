@@ -55,6 +55,8 @@
 ```
 Скрин вывода:
 ![Screenshot_1_1](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_1_1.png)
+![Screenshot_1_1](./img/Screenshot_1_1.png)
+![Screenshot_1_1](./img/Screenshot_1_1.png)
 
 2. Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.
 
