@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Тестовая страница Apache</title>
+    </head>
+    <body>
+        <h1>Характеристики данного хоста</h1>
+        <ul>
+        <li>CPU: {{ ansible_processor }}</li>
+        <li>RAM: {{ ansible_memtotal_mb }}</li>
+        <li>Величина первого HDD: {{ ansible_devices.vda.partitions.vda1.size }}</li>
+        <li>IP-адрес: {{ ansible_all_ipv4_addresses }}</li>
+        </ul>
+    </body>
+</html>

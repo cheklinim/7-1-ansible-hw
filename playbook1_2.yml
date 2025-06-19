@@ -1,0 +1,17 @@
+---
+- name: PLAY1_2
+  hosts: my
+  become: yes
+
+  tasks:
+  - name: install tuned
+    apt:
+      name: tuned
+      state: present
+      update_cache: yes
+ 
+  - name: добавить tuned в автозапуск
+    service:
+      name: tuned
+      enabled: yes
+      state: started  # Необязательный параметр, запускает службу, если она не запущена

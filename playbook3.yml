@@ -1,0 +1,6 @@
+---
+- name: PLAY2
+  hosts: my
+  become: yes
+  roles:
+    - myrole1

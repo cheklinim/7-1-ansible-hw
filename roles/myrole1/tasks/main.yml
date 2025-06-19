@@ -1,0 +1,38 @@
+---
+- name: Установить Apache
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+
+- name: Включить модуль rewrite
+  apache2_module:
+    name: rewrite
+    state: present
+  notify:
+    - Restart Apache
+
+- name: Заменить стартовую страницу на шаблон
+  template:
+    src: ./templates/index.html.j2
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+    mode: '0755'
+
+- name: Открыть порт 80
+  ufw:
+    rule: allow
+    port: 80
+    proto: tcp
+
+- name: Запустить Apache и добавить в автозагрузку
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Check site availability
+  uri:
+    url: http://{{ ansible_ssh_host }}
+

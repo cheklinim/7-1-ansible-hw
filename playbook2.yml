@@ -1,0 +1,15 @@
+---
+- name: PLAY2
+  hosts: my
+  become: yes
+  vars:
+    author: Ivan
+
+  tasks:
+  - name: Template a file to /etc/update-motd.d/99-greeting
+    template:
+      src: ./99-greeting.j2
+      dest: /etc/update-motd.d/99-greeting
+      owner: root
+      group: root
+      mode: '0755'
