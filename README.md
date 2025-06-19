@@ -56,8 +56,6 @@
 Скрин вывода:
 ![Screenshot_1_1](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_1_1.png)
 ![Screenshot_1_1](./img/Screenshot_1_1.png)
-![Screenshot_1_1](./img/Screenshot_1_1.png)
-
 2. Установить пакет tuned из стандартного репозитория вашей ОС. Запустить его, как демон — конфигурационный файл systemd появится автоматически при установке. Добавить tuned в автозагрузку.
 
 Код плейбука:
@@ -82,6 +80,7 @@
 ```
 Скрин вывода:
 ![Screenshot_1_2](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_1_2.png)
+![Screenshot_1_2](./img/Screenshot_1_2.png)
 
 3. Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.
 
@@ -105,7 +104,7 @@
 ```
 Скрин вывода:
 ![Screenshot_1_3](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_1_3.png)
-
+![Screenshot_1_3](./img/Screenshot_1_3.png)
 ---
 
 ### Задание 2
@@ -124,7 +123,7 @@ echo -e '\033[34m#######################################################
 ```
 Скрин вывода:
 ![Screenshot_2](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_2.png)
-
+![Screenshot_2](./img/Screenshot_2.png)
 ---
 
 ### Задание 3
@@ -160,6 +159,8 @@ echo -e '\033[34m#######################################################
 
 3. Скрин выполнения плейбука:
 ![Screenshot_3](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_3.png)
+![Screenshot_3](./img/Screenshot_3.png)
 
 4. Скрин браузера с результатом:
 ![Screenshot_3_1](https://github.com/cheklinim/7-1-ansible-hw/img/Screenshot_3_1.png)
+![Screenshot_3_1](./img/Screenshot_3_1.png)
